@@ -8,8 +8,8 @@ license = "MIT"
 repository = "https://github.com/lynxize/pkrs"
 
 [features]
-default = ["reqwest-client"]
-reqwest-client = ["dep:reqwest", "default-tls"]
+default = ["reqwest-client", "default-tls"]
+reqwest-client = ["dep:reqwest"]
 
 default-tls = ["reqwest?/default-tls"]
 native-tls = ["default-tls"]
